@@ -19,11 +19,12 @@ This project is a RESTful API built with Flask to perform various operations for
 
 ### 1. Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - Flask and related dependencies
 - A Vector Database (Open-sourced Qdrant in this case)
 - `pip` for package installation
-- A valid `SECRET_KEY` for JWT generation
+- A valid `SECRET_KEY` for JWT generation.
+- API keys for Openai and Firecrawl.
 
 ---
 
@@ -53,6 +54,10 @@ This project is a RESTful API built with Flask to perform various operations for
 5. **Run the Flask server**:
    ```bash
    python3 main.py
+   
+6. **Run the streamlit UI**:
+   ```bash
+   streamlit run ui.py
 
 
 ## API Documentation
