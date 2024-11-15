@@ -73,8 +73,8 @@ The `/rag/api/v1/login` endpoint allows users to authenticate and obtain a JWT t
 
 ```json
 {
-  "username": "your_username",
-  "password": "your_password"
+  "username": "your_username",  // username is "admin" by default
+  "password": "your_password"  // password is "password" by default 
 }
 ```
 
@@ -177,7 +177,7 @@ Specify the desired collection name:
 
 ```json
 {
-  "collection_name": "example_collection"
+  "collection_name": "example_collection" // default collection name is "chatbot-rag-db-collection-v1"
 }
 ```
 
@@ -213,7 +213,7 @@ Indicate the collection name and optional limit for retrieved documents:
 
 ```json
 {
-  "collection_name": "example_collection",
+  "collection_name": "example_collection", // default collection name is "chatbot-rag-db-collection-v1"
   "limit": 10  // Optional, defaults to all documents
 }
 ```
